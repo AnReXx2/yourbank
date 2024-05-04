@@ -1,0 +1,19 @@
+@import "../../app/colors.scss";
+
+.button {
+  border: 1px solid $greenBackgroundColor;
+  border-radius: 82px;
+  padding: 14px 30px;
+  background: $greenBackgroundColor;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: $subBackgroundColor;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  color: $greenBackgroundColor;
+  background: transparent;
+}

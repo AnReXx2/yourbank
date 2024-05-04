@@ -1,0 +1,63 @@
+@import "../../app/colors.scss";
+
+.header {
+  padding-inline: 165px;
+}
+
+.header_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid $borderColor;
+  border-radius: 100px;
+  padding: 20px 34px;
+  margin-top: 50px;
+  width: 100%;
+  background: $subBackgroundColor;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 7.5px;
+  text-decoration: none;
+}
+
+.logo_text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.nav_list {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav_listItems {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.sign_button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    display: none;
+  }
+}
