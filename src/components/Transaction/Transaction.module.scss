@@ -1,0 +1,52 @@
+@import "../../app/colors.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 0.87px solid $greyBackgroundColor;
+  border-radius: 10px;
+  padding: 13px 20px;
+  width: 445px;
+  height: 76px;
+  background: $subBackgroundColor;
+}
+
+.trade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 46px;
+  padding: 8px;
+  width: 38px;
+  height: 38px;
+  background: $greenBackgroundColor;
+}
+
+.info {
+  width: 350px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #fff;
+}
