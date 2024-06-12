@@ -46,7 +46,11 @@ export default function Intro() {
         </div>
         <div className={styles.exchange_container}>
           <h4 className={styles.exchange_title}>Money Exchange</h4>
-          <div className={styles.exchange_sub_container}></div>
+          <div className={styles.exchange_sub_container}>
+            <table>
+              <tr></tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>
