@@ -1,0 +1,87 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.textCont {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.textCont h3 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+  color: var(--green-60);
+}
+
+.textCont h3 span {
+  color: var(--absolute-white);
+}
+
+.textCont p {
+  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--grey-70);
+}
+
+.faqCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.itemsCont2 {
+  display: none;
+}
+
+.itemsCont2.activeButt {
+  display: flex;
+}
+
+.button {
+  width: 100%;
+  max-width: 195px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--grey-15);
+  border-radius: 100px;
+  padding: 18px 24px;
+  background: var(--grey-11);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #2e2e2e;
+}
+
+.button p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--absolute-white);
+}
+
+@media screen and (max-width: 1185px) {
+  .textCont {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .textCont h3 {
+    font-size: 28px;
+  }
+
+  .textCont p {
+    font-size: 14px;
+  }
+}

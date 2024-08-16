@@ -1,0 +1,415 @@
+.intro {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+
+.checkCont {
+  width: 100%;
+  max-width: 357px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px 10px 12px;
+  border-radius: 61px;
+  background: var(--grey-15);
+}
+
+.checkCont p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 133%;
+  text-align: center;
+  color: var(--absolute-white);
+}
+
+.description {
+  margin-bottom: 68px;
+}
+
+.description h1 {
+  width: 100%;
+  max-width: 625px;
+  padding: 20px 0 14px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+  color: var(--absolute-white);
+}
+
+.description h1 span {
+  color: var(--green-60);
+}
+
+.description p {
+  width: 100%;
+  max-width: 780px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--white-90);
+}
+
+.button {
+  padding: 18px 30px;
+  border: 1px solid var(--green-60);
+}
+
+.button:hover {
+  background: transparent;
+  color: var(--green-60);
+}
+
+.arrAbs {
+  position: absolute;
+  right: -5px;
+}
+
+.transactionCont {
+  position: relative;
+  width: 515px;
+  height: 624px;
+  padding: 34px;
+  border-radius: 10px;
+  border: 0.87px solid var(--grey-15);
+  background: var(--grey-10);
+  z-index: 1;
+}
+
+.montly {
+  position: absolute;
+  top: -43px;
+  left: -60px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  padding: 13px 17px;
+  width: 100%;
+  max-width: 188px;
+  height: 75px;
+  background: #22251b;
+  transition: all 0.3s ease;
+}
+
+.montly:hover {
+  transform: translateY(-10px);
+}
+
+.plusIcon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 46px;
+  border: 1px solid var(--green-60);
+  background: var(--green-60);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.plusIcon:hover {
+  background: transparent;
+}
+
+.fill {
+  transition: all 0.3s ease;
+}
+
+.plusIcon:hover .fill {
+  fill: #fff;
+}
+
+.textCont h5 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: var(--absolute-white);
+}
+
+.textCont p {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 150%;
+  color: var(--white-90);
+}
+
+.tranTitle {
+  margin-bottom: 18px;
+}
+
+.comp2 {
+  padding: 0 15px;
+}
+
+.comp3 {
+  padding: 0px 34px;
+}
+
+.tcont1 {
+  position: absolute;
+  top: 130px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.tcont2 {
+  position: absolute;
+  top: 180px;
+  opacity: 0.2;
+  z-index: -2;
+}
+
+.exchangeCont {
+  margin-top: 130px;
+  margin-bottom: 45px;
+}
+
+.valutCont {
+  width: 100%;
+  max-width: 445px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.firstSect {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.secondSect {
+  display: flex;
+  gap: 5px;
+}
+
+.exchange {
+  width: 100%;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  color: var(--green-65);
+  padding: 13px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 71px;
+  background: #22251b;
+  transition: all 0.3s ease;
+}
+
+.exchange:hover {
+  background: #3a3e32;
+}
+
+.valut {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 17px;
+  border-radius: 10px;
+  border: 0.87px solid var(--grey-15);
+  background: var(--grey-11);
+  transition: all 0.3s ease;
+}
+
+.valut:hover {
+  transform: translateY(-10px);
+}
+
+.valut div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--absolute-white);
+}
+
+.text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 150%;
+  color: var(--white-90);
+}
+
+.price {
+  width: 100%;
+  max-width: 222px;
+  padding: 26px 17px;
+  border-radius: 10px;
+  border: 0.87px solid var(--grey-15);
+  background: var(--grey-11);
+  transition: all 0.3s ease;
+}
+
+.price:hover {
+  transform: translateY(10px);
+}
+
+.supporterCont {
+  width: 100%;
+  max-width: 370px;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  margin-left: 200px;
+  padding: 8px 8px 8px 20px;
+  border-radius: 69px;
+  background: #22251b;
+  transition: all 0.3s ease;
+}
+
+.supporterCont:hover {
+  transform: scale(1.1);
+}
+
+.supporterCont p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  color: var(--absolute-white);
+}
+
+.suppImgs {
+  width: 100%;
+  max-width: 176px;
+  height: 52px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 0.87px solid var(--grey-15);
+  border-radius: 48px;
+  background: var(--grey-10);
+}
+
+.suppLink {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--grey-15);
+  transition: all 0.3s ease;
+}
+
+.suppLink:hover {
+  background: #3d3d3d;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1190px) {
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .checkCont {
+    margin: 0 auto;
+  }
+
+  .description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .buttonCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .arrAbs {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .montly {
+    top: -43px;
+    left: 0px;
+  }
+
+  .cont2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .supporterCont {
+    margin-left: inherit;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .transactionCont {
+    width: 100%;
+    max-width: 515px;
+  }
+  .checkCont {
+    width: 100%;
+    max-width: 245px;
+    border-radius: 61px;
+    padding: 8px 16px 8px 8px;
+  }
+
+  .checkCont p {
+    font-size: 10px;
+  }
+
+  .description h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 150%;
+  }
+
+  .description p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .tcont1,
+  .tcont2 {
+    position: static;
+  }
+
+  .exchangeCont {
+    margin-bottom: 10px;
+  }
+
+  .exchangeCont {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .text {
+    font-size: 8px;
+  }
+}

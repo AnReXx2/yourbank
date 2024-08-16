@@ -1,0 +1,89 @@
+:root {
+  --absolute-white: #fff;
+  --absolute-black: #000;
+  --green-60: #caff33;
+  --green-65: #d1ff4d;
+  --green-70: #d8ff66;
+  --green-80: #e5ff99;
+  --green-90: #f2ffcc;
+  --green-95: #f8ffe5;
+  --green-97: #fbfff0;
+  --green-99: #fefffa;
+  --white-90: #e4e4e7;
+  --white-95: #f1f1f3;
+  --white-97: #f7f7f8;
+  --white-99: #fcfcfd;
+  --grey-10: #1a1a1a;
+  --grey-11: #1c1c1c;
+  --grey-15: #262626;
+  --grey-20: #333;
+  --grey-30: #4c4c4d;
+  --grey-35: #59595a;
+  --grey-40: #656567;
+  --grey-60: #98989a;
+  --grey-70: #b3b3b3;
+  --grey-75: #bfbfbf;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 50px 162px;
+  background: var(--grey-10);
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1440px) {
+  body {
+    padding: 30px 80px;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  body {
+    padding: 30px 80px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    padding: 30px 16px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  body {
+    padding: 25px 15px;
+  }
+}

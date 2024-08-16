@@ -1,0 +1,20 @@
+.button {
+  width: 100%;
+  max-width: 208px;
+  height: 63px;
+  border: 1px solid var(--grey-15);
+  border-radius: 100px;
+  padding: 18px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--absolute-white);
+  background: var(--grey-11);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* 
+.button:hover {
+  color: var(--green-60);
+  background: var(--grey-10);
+} */

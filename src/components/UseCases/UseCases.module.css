@@ -1,0 +1,49 @@
+.useCases {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.textCont {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.textCont h4 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+  color: var(--green-60);
+}
+
+.textCont p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--grey-70);
+}
+
+.subCont {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1450px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .textCont {
+    text-align: center;
+  }
+}

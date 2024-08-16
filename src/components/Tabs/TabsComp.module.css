@@ -1,0 +1,82 @@
+.tabs {
+  width: 100%;
+  max-width: 386px;
+  height: 83px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  border-radius: 82px;
+  border: 1px solid var(--grey-15);
+  background: var(--grey-11);
+}
+
+.buttonTab {
+  padding: 14px 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  border-radius: 82px;
+  background: var(--green-60);
+  color: var(--grey-11);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.activeButtonTab {
+  padding: 14px 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--grey-11);
+  border-radius: 82px;
+  background: var(--green-60);
+  transition: all 0.3s ease;
+}
+
+.inactiveButtonTab {
+  all: unset;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  padding-left: 14px;
+  color: var(--absolute-white);
+  cursor: pointer;
+}
+
+.text {
+  margin-right: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  padding: 10px 0;
+  color: var(--absolute-white);
+  cursor: pointer;
+}
+
+.text.active {
+  margin-right: 0;
+  padding: 14px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--grey-11);
+  border-radius: 82px;
+  background: var(--green-60);
+  transition: all 0.3s ease;
+}
+
+.text.inactive {
+  color: var(--absolute-white);
+}
+
+@media screen and (max-width: 420px) {
+  .tabs p {
+    font-size: 14px;
+  }
+
+  .text.active {
+    font-size: 14px;
+  }
+}

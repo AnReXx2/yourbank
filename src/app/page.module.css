@@ -1,0 +1,29 @@
+.absDesign {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.content {
+  margin: 150px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1190px) {
+  .content {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .absDesign {
+    width: 100%;
+    max-width: 385px;
+    height: 285px;
+  }
+}

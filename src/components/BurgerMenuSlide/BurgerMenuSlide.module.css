@@ -1,0 +1,30 @@
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  list-style: none;
+}
+
+.link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--absolute-white);
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+  gap: 30px;
+}
+
+.signUp {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--absolute-white);
+}

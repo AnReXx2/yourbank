@@ -1,0 +1,85 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.textCont {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.textCont h3 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+  color: var(--absolute-white);
+}
+
+.textCont h3 span {
+  color: var(--green-60);
+}
+
+.textCont p {
+  width: 100%;
+  max-width: 1200px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--grey-70);
+}
+
+.featuresCont {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.featuresNav {
+  width: 100%;
+  max-width: 308px;
+  height: 337px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 12px;
+  padding: 50px;
+  background: var(--grey-11);
+}
+
+.cardContainer.activeOne,
+.cardContainer2.activeOne,
+.cardContainer3.activeOne {
+  display: flex;
+}
+
+.cardContainer2.activeOne h3 {
+  color: red;
+}
+
+.cardContainer3.activeOne h3 {
+  color: green;
+}
+
+.featuresButt.activeButton {
+  color: var(--green-60);
+  background: var(--grey-10);
+}
+
+@media screen and (max-width: 1300px) {
+  .featuresCont {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .textCont {
+    text-align: center;
+  }
+
+  .textCont h3 {
+    font-size: 28px;
+  }
+}

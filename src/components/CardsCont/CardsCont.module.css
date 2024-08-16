@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 748px;
+  height: 534px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+  background: var(--grey-11);
+  z-index: 2;
+}
+
+.absDesign {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container div {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    height: 790px;
+  }
+
+  .container div {
+    width: 100%;
+    height: 350px;
+    align-items: center;
+    flex-direction: column;
+  }
+}

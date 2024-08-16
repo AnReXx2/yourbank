@@ -1,0 +1,44 @@
+.transaction {
+  width: 100%;
+  max-width: 445px;
+  height: 76px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 14px 21px;
+  border-radius: 10px;
+  border: 0.87px solid var(--grey-15);
+  background: var(--grey-11);
+}
+
+.transaction div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.transaction div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction div div p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 150%;
+  color: var(--absolute-white);
+}
+
+.transaction div div h3 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: var(--absolute-white);
+}
+
+.tranMoney {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--absolute-white);
+}

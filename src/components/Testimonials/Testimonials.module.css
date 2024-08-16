@@ -1,0 +1,98 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.textConts {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.embla {
+  position: relative;
+  overflow: hidden;
+}
+
+.emblaContainer {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.cardWrapper {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.isActive {
+  transform: scale(1.1);
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid var(--grey-15);
+  border-radius: 100px;
+  padding: 14px;
+  width: 62px;
+  height: 62px;
+  background: var(--grey-11);
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  background: #2e2e2e;
+}
+
+@media screen and (max-width: 955px) {
+  .testimonials,
+  .textConts {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cardWrapper {
+    flex: 0 0 100%;
+  }
+
+  .prevButton,
+  .nextButton {
+    position: static;
+  }
+
+  .butts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .textCont h3 {
+    font-size: 28px;
+  }
+
+  .textCont p {
+    font-size: 14px;
+  }
+}
