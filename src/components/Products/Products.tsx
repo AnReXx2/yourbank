@@ -6,7 +6,7 @@ import Image from "../../../public/assets/icons/product_icon-1.svg";
 import { TabsComp, ProductsContainer, TextTabContainer } from "@/components";
 
 const Products = () => {
-  const [activeTab, setActiveTab] = useState<string>("Businesses");
+  const [activeTab, setActiveTab] = useState<string>("Individuals");
 
   const handleTabClick = (tab: string) => {
     setActiveTab(tab);

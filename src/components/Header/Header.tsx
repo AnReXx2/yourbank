@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Header.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,6 +13,18 @@ const Header: React.FC = () => {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.documentElement.classList.add("no-scroll");
+    } else {
+      document.documentElement.classList.remove("no-scroll");
+    }
+
+    return () => {
+      document.documentElement.classList.remove("no-scroll");
+    };
+  }, [isMenuOpen]);
 
   return (
     <header className={styles.header}>

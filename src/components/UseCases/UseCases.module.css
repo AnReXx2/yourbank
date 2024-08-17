@@ -32,15 +32,14 @@
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1400px) {
   .container {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
   }
 
   .textCont {

@@ -6,10 +6,11 @@ import { TextTabContainer, TabsComp, TestimonialsCard } from "@/components";
 import useEmblaCarousel from "embla-carousel-react";
 
 const Testimonials = () => {
-  const [activeTab, setActiveTab] = useState<string>("Businesses");
+  const [activeTab, setActiveTab] = useState<string>("Individuals");
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: "center",
+    slidesToScroll: 1,
   });
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -27,13 +28,15 @@ const Testimonials = () => {
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
-    setSelectedIndex(emblaApi.selectedScrollSnap());
+    const index = emblaApi.selectedScrollSnap();
+    console.log("Selected index:", index); // Debug log
+    setSelectedIndex(index);
   }, [emblaApi]);
 
   useEffect(() => {
     if (!emblaApi) return;
     emblaApi.on("select", onSelect);
-    onSelect(); // Initial call
+    onSelect();
   }, [emblaApi, onSelect]);
 
   return (
@@ -48,36 +51,27 @@ const Testimonials = () => {
       </div>
       <div className={styles.embla} ref={emblaRef}>
         <div className={styles.emblaContainer}>
-          <div
-            className={`${styles.cardWrapper} ${
-              selectedIndex === 0 ? styles.isActive : ""
-            }`}
-          >
-            <TestimonialsCard
-              text="I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable."
-              name="John D"
-            />
-          </div>
-          <div
-            className={`${styles.cardWrapper} ${
-              selectedIndex === 1 ? styles.isActive : ""
-            }`}
-          >
-            <TestimonialsCard
-              text="YourBank's customer service is outstanding! They always go the extra mile to ensure I'm happy and that my financial needs are met. I couldn't be more pleased with their service."
-              name="Sarah K"
-            />
-          </div>
-          <div
-            className={`${styles.cardWrapper} ${
-              selectedIndex === 2 ? styles.isActive : ""
-            }`}
-          >
-            <TestimonialsCard
-              text="Switching to YourBank was the best financial decision I've made. Their online banking platform is user-friendly and has made managing my finances so much easier."
-              name="Michael R"
-            />
-          </div>
+          {[0, 1, 2].map((index) => (
+            <div
+              key={index}
+              className={`${styles.cardWrapper} ${
+                selectedIndex === index ? styles.isActive : ""
+              }`}
+            >
+              <TestimonialsCard
+                text={
+                  index === 0
+                    ? "I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable."
+                    : index === 1
+                    ? "YourBank's customer service is outstanding! They always go the extra mile to ensure I'm happy and that my financial needs are met. I couldn't be more pleased with their service."
+                    : "Switching to YourBank was the best financial decision I've made. Their online banking platform is user-friendly and has made managing my finances so much easier."
+                }
+                name={
+                  index === 0 ? "John D" : index === 1 ? "Sarah K" : "Michael R"
+                }
+              />
+            </div>
+          ))}
         </div>
         <div className={styles.butts}>
           <button className={styles.prevButton} onClick={scrollPrev}>
@@ -91,9 +85,9 @@ const Testimonials = () => {
               <path
                 d="M19.2083 10H1.5M1.5 10L10 1.5M1.5 10L10 18.5"
                 stroke="#CAFF33"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>
@@ -108,9 +102,9 @@ const Testimonials = () => {
               <path
                 d="M1.50016 10H19.2085M19.2085 10L10.7085 1.5M19.2085 10L10.7085 18.5"
                 stroke="#CAFF33"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>

@@ -102,11 +102,25 @@
   .final {
     flex-direction: column;
   }
+
+  .final {
+    width: 500px;
+    height: 230px;
+    position: relative;
+    border: 1px solid var(--grey-15);
+    border-radius: 12px;
+    padding: 50px 24px 30px 12px;
+  }
 }
 
 @media screen and (max-width: 970px) {
+  .footer {
+    padding: 60px 122px 10px 122px;
+  }
+
   .body {
     flex-direction: column;
+    align-items: normal;
   }
 
   .final {
@@ -125,5 +139,23 @@
 
   .body div p {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .body div p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .body div {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .footer {
+    padding: 30px 72px 10px 72px;
   }
 }

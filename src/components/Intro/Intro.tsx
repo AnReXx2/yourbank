@@ -67,7 +67,7 @@ const Intro = () => {
           <div className={styles.transactions}>
             <h3 className={styles.tranTitle}>Your Transactions</h3>
             <div>
-              <Transaction title="Joel Kenley" />
+              <Transaction title="Joel Kenley" className={styles.tcont} />
               <div className={styles.comp2}>
                 <Transaction className={styles.tcont1} title="Mark Smith" />
               </div>

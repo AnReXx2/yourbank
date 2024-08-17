@@ -350,7 +350,7 @@
 @media screen and (max-width: 690px) {
   .montly {
     top: -43px;
-    left: 0px;
+    left: 165px;
   }
 
   .cont2 {
@@ -371,15 +371,16 @@
     width: 100%;
     max-width: 515px;
   }
+
   .checkCont {
     width: 100%;
-    max-width: 245px;
+    max-width: 250px;
     border-radius: 61px;
-    padding: 8px 16px 8px 8px;
+    padding: 9px 16px 9px 9px;
   }
 
   .checkCont p {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .description h1 {
@@ -406,10 +407,67 @@
   .exchangeCont {
     margin-top: 25px;
   }
+
+  .button {
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+
+  .montly {
+    left: 145px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .montly {
+    left: 125px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .montly {
+    left: 115px;
+  }
 }
 
 @media screen and (max-width: 455px) {
   .text {
     font-size: 8px;
+  }
+
+  .tcont p,
+  .tcont1 p,
+  .tcont2 p {
+    display: none;
+  }
+
+  .montly {
+    left: 110px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .montly {
+    left: 90px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .supporterCont p {
+    font-size: 13px;
+  }
+
+  .suppImgs {
+    max-width: 162px;
+  }
+
+  .montly {
+    left: 80px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .montly {
+    left: 60px;
   }
 }
