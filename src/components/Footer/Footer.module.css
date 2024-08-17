@@ -142,6 +142,12 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .final {
+    width: 400px;
+  }
+}
+
 @media screen and (max-width: 525px) {
   .body div p {
     font-size: 12px;
@@ -154,8 +160,24 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+  .final {
+    width: 300px;
+  }
+
+  .final p {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 430px) {
   .footer {
     padding: 30px 72px 10px 72px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu {
+    gap: 15px;
   }
 }

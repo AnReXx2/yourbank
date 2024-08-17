@@ -43,7 +43,7 @@ const Products = () => {
           <ProductsContainer
             src={Image}
             title="Loans and Mortgages"
-            text="Realize your dreams with our flexible loan and mortgage options. From personal loans to home mortgages, our experienced loan officers are here to guide you through the application process and help you secure the funds you need."
+            text="Realize your dreams with our flexible loan and mortgage options. From personal loans to home mortgages, our experienced loan officers are here to guide you through the application process and help you the need."
           />
         </div>
         <div
@@ -63,7 +63,7 @@ const Products = () => {
           <ProductsContainer
             src={Image}
             title="Hello"
-            text="Realize your dreams with our flexible loan and mortgage options. From personal loans to home mortgages, our experienced loan officers are here to guide you through the application process and help you secure the funds you need."
+            text="Realize your dreams with our flexible loan and mortgage options. From personal loans to home mortgages, our experienced loan officers are here to guide you through the application process and help you the need."
           />
         </div>
       </div>

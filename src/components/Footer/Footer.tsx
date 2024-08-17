@@ -73,7 +73,7 @@ const Footer = () => {
           <p>YourBank All Rights Reserved</p>
         </div>
         <div>
-          <p>Privacy Policy | Terms of Service</p>
+          <p className={styles.copyright}>Privacy Policy | Terms of Service</p>
         </div>
       </div>
     </footer>
