@@ -6,7 +6,7 @@ const Button = ({ title, className, onClick }: PropsTypes) => {
   return (
     <Link
       className={`${styles.button} ${className}`}
-      href={""}
+      href={"/login"}
       onClick={onClick}
     >
       {title}
