@@ -16,7 +16,7 @@ const Intro = () => {
     <section className={styles.intro}>
       <div className={styles.cont1}>
         <div className={styles.checkCont}>
-          <Image src={check} alt="check_icon" />
+          <Image className={styles.img} src={check} alt="check_icon" />
           <p>No LLC Required, No Credit Check.</p>
         </div>
         <div className={styles.description}>

@@ -28,6 +28,7 @@
   max-width: 791px;
   height: 495px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 24px;
   background: var(--grey-10);

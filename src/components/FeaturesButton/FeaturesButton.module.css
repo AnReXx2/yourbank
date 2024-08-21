@@ -11,10 +11,6 @@
   color: var(--absolute-white);
   background: var(--grey-11);
   cursor: pointer;
+  user-select: none;
   transition: all 0.3s ease;
 }
-/* 
-.button:hover {
-  color: var(--green-60);
-  background: var(--grey-10);
-} */

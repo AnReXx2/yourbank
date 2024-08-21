@@ -7,6 +7,7 @@
   flex-direction: column;
   gap: 30px;
   background-image: url("/assets/image/card.png");
+  user-select: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

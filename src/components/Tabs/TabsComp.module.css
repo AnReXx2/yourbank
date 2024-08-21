@@ -10,6 +10,7 @@
   border-radius: 82px;
   border: 1px solid var(--grey-15);
   background: var(--grey-11);
+  user-select: none;
 }
 
 .buttonTab {

@@ -18,7 +18,7 @@ export * from "./Faq";
 export * from "./FaqItem";
 export * from "./FaqItemsCont";
 export * from "./Testimonials";
-export * from "./TextTabContainer";
+export * from "./TextContainer";
 export * from "./TestimonialsCard";
 export * from "./Cta";
 export * from "./Footer";

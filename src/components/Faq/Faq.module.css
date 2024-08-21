@@ -4,12 +4,6 @@
   gap: 80px;
 }
 
-.textCont {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
 .textCont h3 {
   font-weight: 500;
   font-size: 48px;
@@ -56,6 +50,7 @@
   padding: 18px 24px;
   background: var(--grey-11);
   cursor: pointer;
+  user-select: none;
   transition: all 0.3s ease;
 }
 

@@ -1,21 +1,14 @@
 import styles from "./OurValues.module.css";
-import { ValuesCard } from "@/components";
+import { ValuesCard, TextContainer } from "@/components";
 
 const OurValues = () => {
   return (
     <section className={styles.ourvalues}>
-      <div className={styles.textCont}>
-        <h3>
-          Our <span>Values</span>
-        </h3>
-        <p>
-          At YourBank, our values form the foundation of our organization and
-          guide our actions. We believe in upholding the highest standards of
-          integrity, delivering exceptional service, and embracing innovation.
-          These values define our culture and shape the way we work together to
-          achieve our goals.
-        </p>
-      </div>
+      <TextContainer
+        title="Our"
+        span="Values"
+        text="At YourBank, our values form the foundation of our organization and guide our actions. We believe in upholding the highest standards of integrity, delivering exceptional service, and embracing innovation. These values define our culture and shape the way we work together to achieve our goals."
+      />
       <div className={styles.valuesCards}>
         <div className={styles.card}>
           <ValuesCard

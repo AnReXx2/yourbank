@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect } from "react";
 import styles from "./Testimonials.module.css";
-import { TextTabContainer, TabsComp, TestimonialsCard } from "@/components";
+import { TextContainer, TabsComp, TestimonialsCard } from "@/components";
 import useEmblaCarousel from "embla-carousel-react";
 
 const Testimonials = () => {
@@ -42,7 +42,7 @@ const Testimonials = () => {
   return (
     <section className={styles.testimonials}>
       <div className={styles.textConts}>
-        <TextTabContainer
+        <TextContainer
           title="Our"
           span="Testimonials"
           text="Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See why our clients trust us for a secure and prosperous financial journey."

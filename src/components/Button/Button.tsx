@@ -4,13 +4,9 @@ import Link from "next/link";
 
 const Button = ({ title, className, onClick }: PropsTypes) => {
   return (
-    <Link
-      className={`${styles.button} ${className}`}
-      href={"/login"}
-      onClick={onClick}
-    >
+    <div className={`${styles.button} ${className}`} onClick={onClick}>
       {title}
-    </Link>
+    </div>
   );
 };
 

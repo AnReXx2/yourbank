@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "./Products.module.css";
 import Image from "../../../public/assets/icons/product_icon-1.svg";
-import { TabsComp, ProductsContainer, TextTabContainer } from "@/components";
+import { TabsComp, ProductsContainer, TextContainer } from "@/components";
 
 const Products = () => {
   const [activeTab, setActiveTab] = useState<string>("Individuals");
@@ -15,7 +15,7 @@ const Products = () => {
     <section className={styles.products}>
       <div className={styles.subCont1}>
         <div className={styles.textCont}>
-          <TextTabContainer
+          <TextContainer
             title="Our"
             span="Products"
             text="Discover a range of comprehensive and customizable banking products

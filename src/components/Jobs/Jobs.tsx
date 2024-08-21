@@ -1,17 +1,13 @@
 import styles from "./Jobs.module.css";
-import { JobsCard } from "@/components";
+import { JobsCard, TextContainer } from "@/components";
 
 const Jobs = () => {
   return (
     <section className={styles.jobs}>
-      <div className={styles.textCont}>
-        <h3>Job Openings</h3>
-        <p>
-          Explore exciting job openings at YourBank, where we value talent,
-          innovation, and a passion for customer service. Join our team and be
-          part of shaping a brighter future in the banking industry
-        </p>
-      </div>
+      <TextContainer
+        title="Job Openings"
+        text="Explore exciting job openings at YourBank, where we value talent, innovation, and a passion for customer service. Join our team and be part of shaping a brighter future in the banking industry"
+      />
       <div className={styles.jobsCards}>
         <div className={styles.flex}>
           <JobsCard

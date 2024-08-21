@@ -8,6 +8,7 @@
   border: 1px solid var(--grey-15);
   border-radius: 12px;
   background: var(--grey-11);
+  user-select: none;
   transition: all 0.3s ease;
 }
 

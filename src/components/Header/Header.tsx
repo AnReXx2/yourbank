@@ -59,7 +59,9 @@ const Header: React.FC = () => {
         <Link className={styles.signUp} href={"/sign_up"}>
           Sign Up
         </Link>
-        <Button title="Login" />
+        <Link href={"/login"}>
+          <Button title="Login" />
+        </Link>
       </div>
       <div
         className={`${styles.burger} ${isMenuOpen ? styles.active : ""}`}

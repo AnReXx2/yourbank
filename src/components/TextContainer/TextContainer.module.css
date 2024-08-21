@@ -1,4 +1,4 @@
-.subCont1 {
+.container {
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -11,16 +11,20 @@
   color: var(--absolute-white);
 }
 
+.textCont {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
 .textCont h3 span {
   color: var(--green-60);
 }
 
 .textCont p {
   width: 100%;
-  max-width: 910px;
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
   color: var(--grey-70);
-  cursor: pointer;
 }

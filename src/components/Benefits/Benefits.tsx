@@ -3,21 +3,16 @@ import compensationIcon from "../../../public/assets/icons/compensation_icon.svg
 import healtWellnesIcon from "../../../public/assets/icons/health_wellnes-icon.svg";
 import retirementIcon from "../../../public/assets/icons/retirement_icon.svg";
 import balanceIcon from "../../../public/assets/icons/balance_icon.svg";
-import { BenefitsCard } from "@/components";
+import { BenefitsCard, TextContainer } from "@/components";
 
 const Benefits = () => {
   return (
     <section className={styles.benefits}>
-      <div className={styles.textCont}>
-        <h3>
-          Our <span>Benefits</span>
-        </h3>
-        <p>
-          At YourBank, we value our employees and are dedicated to their
-          well-being and success. We offer a comprehensive range of benefits
-          designed to support their personal and professional growth.
-        </p>
-      </div>
+      <TextContainer
+        title="Our"
+        span="Benefits"
+        text="At YourBank, we value our employees and are dedicated to their well-being and success. We offer a comprehensive range of benefits designed to support their personal and professional growth."
+      />
       <div className={styles.benefitsCards}>
         <div className={styles.card}>
           <BenefitsCard

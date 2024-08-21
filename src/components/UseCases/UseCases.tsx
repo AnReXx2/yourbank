@@ -1,16 +1,14 @@
 import styles from "./UseCases.module.css";
-import { CardsCont, UseCasesInfo } from "@/components";
+import { CardsCont, UseCasesInfo, TextContainer } from "@/components";
 
 const UseCases = () => {
   return (
     <section className={styles.useCases}>
-      <div className={styles.textCont}>
-        <h4>Use Cases</h4>
-        <p>
-          At YourBank, we cater to the diverse needs of individuals and
-          businesses alike, offering a wide range of financial solutions
-        </p>
-      </div>
+      <TextContainer
+        className={styles.textCont}
+        title="Use Cases"
+        text="At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a wide range of financial solutions"
+      />
       <div className={styles.subCont}>
         <div className={styles.container}>
           <CardsCont />
