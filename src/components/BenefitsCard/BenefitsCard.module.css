@@ -1,0 +1,106 @@
+.card {
+  width: 100%;
+  max-width: 748px;
+  border-radius: 50px 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-image: url("/assets/image/card.png");
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .img {
+  transform: rotate(5deg) scale(1.1);
+}
+
+.head h4 {
+  width: 100%;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--absolute-white);
+}
+
+.card p {
+  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--grey-70);
+}
+
+@media screen and (max-width: 1500px) {
+  .card {
+    max-width: 610px;
+    padding: 40px;
+  }
+
+  .img {
+    width: 76px;
+    height: 76px;
+  }
+
+  .head h4 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .card {
+    max-width: 472px;
+    padding: 30px;
+  }
+
+  .img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .head h4 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1145px) {
+  .card {
+    max-width: 472px;
+    padding: 30px;
+  }
+
+  .img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .head h4 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+}

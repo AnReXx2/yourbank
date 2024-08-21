@@ -1,0 +1,73 @@
+.ourvalues {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.textCont {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.textCont h3 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+  color: var(--absolute-white);
+}
+
+.textCont span {
+  color: var(--green-60);
+}
+
+.textCont p {
+  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--grey-70);
+}
+
+.valuesCards {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.card {
+  display: flex;
+  gap: 80px;
+}
+
+@media screen and (max-width: 1580px) {
+  .textCont h3 {
+    font-size: 38px;
+  }
+
+  .textCont p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .card {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .textCont {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .textCont h3 {
+    font-size: 28px;
+  }
+
+  .textCont p {
+    font-size: 14px;
+  }
+}

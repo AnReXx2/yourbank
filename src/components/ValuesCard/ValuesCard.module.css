@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0px 0px 0px 30px;
+  width: 100%;
+  max-width: 758px;
+  border-left: 4px solid var(--green-60);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  background-color: var(--grey-90);
+  border-color: var(--green-60);
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--green-60);
+  transition: width 0.3s ease, opacity 0.8s ease;
+  z-index: 1;
+}
+
+.container:hover::before {
+  width: 100%;
+  opacity: 0;
+}
+
+.container h3,
+.container p {
+  position: relative;
+  z-index: 2;
+}
+
+.container h3 {
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 150%;
+  color: var(--grey-30);
+  transition: all 0.3s ease;
+}
+
+.container:hover h3 {
+  color: var(--green-60);
+}
+
+.container p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--grey-70);
+  transition: all 0.3s ease;
+}
+
+.container:hover p {
+  color: var(--grey-40);
+}
+
+@media screen and (max-width: 1580px) {
+  .container h3 {
+    font-size: 40px;
+  }
+
+  .container p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container h3 {
+    font-size: 30px;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+}

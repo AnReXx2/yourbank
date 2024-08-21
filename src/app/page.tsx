@@ -9,7 +9,6 @@ import {
   Faq,
   Testimonials,
   Cta,
-  Footer,
 } from "@/components";
 
 export default function Home() {
@@ -45,9 +44,6 @@ export default function Home() {
           </section>
         </main>
       </main>
-      <footer>
-        <Footer />
-      </footer>
     </>
   );
 }

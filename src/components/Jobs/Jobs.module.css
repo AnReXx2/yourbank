@@ -1,0 +1,72 @@
+.jobs {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.textCont {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.textCont h3 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+  color: var(--green-60);
+}
+
+.textCont p {
+  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--grey-70);
+}
+
+.jobsCards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.flex {
+  display: flex;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1340px) {
+  .textCont {
+    text-align: center;
+  }
+
+  .jobsCards {
+    align-items: center;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .textCont h3 {
+    font-size: 38px;
+  }
+
+  .textCont p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .textCont h3 {
+    font-size: 28px;
+  }
+
+  .textCont p {
+    font-size: 14px;
+  }
+}

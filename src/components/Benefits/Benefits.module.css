@@ -1,0 +1,70 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.textCont {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.textCont h3 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+  color: var(--absolute-white);
+}
+
+.textCont h3 span {
+  color: var(--green-60);
+}
+
+.textCont p {
+  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--grey-70);
+}
+
+.benefitsCards {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+@media screen and (max-width: 1035px) {
+  .textCont {
+    text-align: center;
+  }
+
+  .textCont h3 {
+    font-size: 38px;
+  }
+
+  .textCont p {
+    font-size: 16px;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .textCont h3 {
+    font-size: 28px;
+  }
+
+  .textCont p {
+    font-size: 14px;
+  }
+}
