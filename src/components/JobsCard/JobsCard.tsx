@@ -23,7 +23,7 @@ const JobsCard = ({ title, aboutText }: PropsTypes) => {
         <div className={styles.requairement}>
           <div>
             <Image src={requairementIcon} alt="icon" />
-            <p>Bachelor's degree in Business, Finance, or a related field</p>
+            <p>Bachelors degree in Business, Finance, or a related field</p>
           </div>
           <div>
             <Image src={requairementIcon} alt="icon" />
