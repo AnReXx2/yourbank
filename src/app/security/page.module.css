@@ -1,0 +1,6 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  margin: 50px 0 150px;
+}

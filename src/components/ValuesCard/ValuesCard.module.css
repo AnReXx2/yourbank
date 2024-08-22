@@ -82,4 +82,10 @@
   .container p {
     font-size: 14px;
   }
+
+  .container {
+    border-left: none;
+    border-top: 4px solid var(--green-60);
+    text-align: center;
+  }
 }

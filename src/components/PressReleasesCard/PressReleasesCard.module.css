@@ -1,0 +1,125 @@
+.card {
+  width: 100%;
+  max-width: 783px;
+  border: 1px solid var(--grey-15);
+  border-radius: 40px 40px 16px 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  user-select: none;
+  background: var(--grey-11);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.card:hover .img {
+  transform: scale(1.05);
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.head h3 {
+  width: 100%;
+  max-width: 665px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--absolute-white);
+  transition: all 0.3s ease;
+}
+
+.card:hover .head h3 {
+  color: var(--primary-color);
+}
+
+.subHead {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.labels {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subHead p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--grey-70);
+  border: 1px solid var(--grey-15);
+  border-radius: 68px;
+  padding: 8px 16px;
+  width: 161px;
+  background: var(--grey-10);
+  transition: all 0.3s ease;
+}
+
+.card:hover .subHead p {
+  background-color: var(--primary-color);
+  color: var(--absolute-white);
+  border-color: var(--primary-color);
+}
+
+.text {
+  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--grey-70);
+  transition: all 0.3s ease;
+}
+
+.card:hover .text {
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 1310px) {
+  .head h3 {
+    font-size: 20px;
+  }
+
+  .head p {
+    font-size: 16px;
+  }
+
+  .subHead p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .card {
+    padding: 20px;
+  }
+
+  .head h3 {
+    font-size: 18px;
+  }
+
+  .head p {
+    font-size: 14px;
+  }
+
+  .subHead p {
+    font-size: 12px;
+  }
+}

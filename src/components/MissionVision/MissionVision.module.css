@@ -1,0 +1,53 @@
+.missionVision {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.textCont h3 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 150%;
+  color: var(--green-60);
+}
+
+.subCont {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.cardImg {
+  border: 1px solid var(--grey-15);
+  border-radius: 50px 50px 20px 20px;
+  padding: 60px 60px 0px 60px;
+  width: 100%;
+  max-width: 664px;
+}
+
+@media screen and (max-width: 1450px) {
+  .card {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .textCont {
+    text-align: center;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    gap: 20px;
+  }
+}

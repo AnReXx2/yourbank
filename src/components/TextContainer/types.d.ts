@@ -1,5 +1,5 @@
 export type PropsTypes = {
-  title: string;
+  title?: string;
   span?: string;
   text: string;
   className?: PropsTypes.string;

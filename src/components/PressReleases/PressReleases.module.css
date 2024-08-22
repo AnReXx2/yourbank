@@ -1,0 +1,36 @@
+.pressReleases {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.textCont h3 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 150%;
+  color: var(--green-60);
+}
+
+.cardsCont {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1310px) {
+  .textCont {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cont {
+    flex-direction: column;
+  }
+}
