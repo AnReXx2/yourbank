@@ -50,10 +50,29 @@ body {
   margin: 0 auto;
   padding: 50px 162px;
   background: var(--grey-10);
+  font-family: "Inter", "Lexend", sans-serif;
 }
 
 a {
   text-decoration: none;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/public/fonts/inter/Inter_18pt-Medium.ttf") format("ttf"),
+    url("/public/fonts/inter/Inter_18pt-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lexend";
+  src: url("/public/fonts/lexend/Lexend-Light.ttf") format("ttf"),
+    url("/public/fonts/lexend/Lexend-Regular.ttf") format("ttf"),
+    url("/public/fonts/lexend/Lexend-SemiBold.ttf") format("ttf"),
+    url("/public/fonts/lexend/Lexend-Medium.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @media (prefers-color-scheme: dark) {

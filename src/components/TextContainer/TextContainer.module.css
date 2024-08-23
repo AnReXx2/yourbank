@@ -28,3 +28,9 @@
   line-height: 150%;
   color: var(--grey-70);
 }
+
+@media screen and (max-width: 900px) {
+  .container {
+    text-align: center;
+  }
+}

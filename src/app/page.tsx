@@ -13,7 +13,7 @@ import {
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <div className={styles.main}>
       <Image
         className={styles.absDesign}
         src={absDesign}
@@ -42,6 +42,6 @@ export default function Home() {
           <Cta />
         </section>
       </main>
-    </main>
+    </div>
   );
 }
