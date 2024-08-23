@@ -3,7 +3,7 @@
   max-width: 445px;
   height: 76px;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-between;
   padding: 14px 21px;
   border-radius: 10px;
