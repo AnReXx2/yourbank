@@ -97,3 +97,23 @@
   align-items: center;
   gap: 25px;
 }
+
+@media screen and (max-width: 600px) {
+  .form {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .textCont h3 {
+    font-size: 28px;
+  }
+
+  .textCont p {
+    font-size: 14px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}

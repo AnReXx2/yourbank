@@ -35,6 +35,12 @@
   color: var(--absolute-white);
 }
 
+.link.activeLink {
+  background: var(--grey-15);
+  border-radius: 82px;
+  padding: 12px 24px;
+}
+
 .sign {
   display: flex;
   align-items: center;
